@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f1f2f3;
+    font-family: sans-serif;
+}
+
+.top-nav-bar{
+    height: 60px;
+    top: 0px;
+    position: sticky;
+    background: #fff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid skyblue;
+    z-index: 2;  
+}
+
+.logo{
+    height: 40px;
+    margin: 5px 10px;
+}
+
+.form-control{
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid skyblue !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    box-shadow: none !important;
+}
+
+.input-group-text{
+    background: skyblue !important;
+    border: 1px solid skyblue !important;
+    margin: 8.5px 10px 3px 0 !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+
+.search-box{
+    display: inline-flex;
+    width: 60%;
+}
+
+.fa-search{
+    color: white;
+}
+
+.menu-bar{
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    float: right;
+}
+
+.menu-bar ul li {
+    border-left: 1px solid white;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.menu-bar ul li {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.fa-shopping-basket {
+    margin-right: 5px;
+}
+
+
+/* ---------------Side Menu---------------- */
+
+.side-menu {
+    height: 79%;
+    width: 10%;
+    font-size: 8px;
+    float: left;
+    zoom: 2;
+    background-color: #ddd;
+}
+
+.side-menu ul {
+    margin-left: 8px;    
+}
+
+.side-menu ul li{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.side-menu ul li:hover{
+    color: orangered;
+}
+
+.side-menu ul li ul{
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+
+.side-menu ul li:hover ul{
+    display: block;
+    height: 400px;
+    margin-left: 9%;
+    padding: 0 80px 8px 8px;
+    position: fixed;
+    background: #ececec;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+/* --------------------Slider----------------- */
+.slider{
+    width: 85%;
+    margin-left: 10%;
+    padding: 0 8px;
+}
+
+.carousel{
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators{
+    z-index: 1 !important;
+}
+
+/* Catagories */
+
+.catagories{
+    margin: 50px 0;
+}
+
+.catagories img{
+    width: 100%;
+    padding: 20px 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.catagories img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Sale */
+.title-box{
+    background: orangered;
+    color: #fff;
+    width: 150px;
+    padding: 4px 8px;
+    height: 40px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.title-box h2{
+    font-size: 24px;
+}
+
+.title-box::after{
+    content: '';
+    border-top: 40px solid orangered;
+    border-right: 50px solid transparent;
+    position: absoulte;
+    display: flex;
+    margin-top: -4px;
+    /* margin-left: 200px; */
+}
+
+/* product top */
+.product-top{
+    width: 100%;
+}
+
+.overlay-right{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+
+.overlay-right .fa{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.overlay-right .btn-secondary{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.product-top:hover .overlay-right{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+
+
+/* Product Bottom */
+.product-bottom .fa{
+    color: orangered;
+    font-size: 10px;
+}
+
+.product-bottom h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-bottom h5{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+#btn-login{
+    background-color: skyblue;
+    border: none;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#btn-logout{
+    background-color: skyblue;
+    border: none;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#btn-cart{
+    background-color: skyblue;
+    border: none;
+    font-weight: bold;
+    color: #007bff;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+
+/* The Modal (background) */
+.popup {
+	display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content Box */
+.popup-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+	padding-bottom: 30px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: relative;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.single-cart-item{
+    border: 1px solid black;
+    margin: 2px 0;
+}
+.single-cart-item p,span{
+    display: inline-block;
+}
+.single-cart-item span{
+    float: right;
+}
+.total-cart{
+    border: 2px grey solid;
+    padding: 5px;
+    margin: 14px;
+    text-align: right;
+}
+
+.single-product{
+    border: 1px dotted grey;
+    border-radius: 5%;
+    padding: 15px;
+}
+.single-product img{
+    border-radius: 5%;
+}
+.side-menu li.active{
+    color: orangered;
+    border: 1px orangered solid;
+}
+.wrong-cred{
+    margin: 0 0 0 36px;
+    color: red;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
